@@ -1,0 +1,22 @@
+{
+    "name": "client",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "browserify ./src/main.js -o ./src/app-bundle.js && live-server ./src",
+        "browser": "browserify ./src/main.js -o ./src/app-bundle.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "mediasoup-client": "^3.6.36",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "browserify": "^17.0.1",
+        "live-server": "^1.2.2"
+    }
+}
