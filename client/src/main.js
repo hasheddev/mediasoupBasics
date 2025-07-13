@@ -149,6 +149,7 @@ const onConsumerTransportCreated = async (resp) => {
         return 
     }
     const transport = device.createRecvTransport(resp.data)
+    consumeTransport = transport
     //
     transport.on("connect", async ({dtlsParameters}, callback, errBack) => {
        const message = {
